@@ -2,7 +2,7 @@
 
 *Versão alfa · 22 de outubro de 2026*
 
-O Wondher Pulse é feito pela **Wondher Digital LTDA**, que é a controladora dos dados tratados na nuvem da equipe, nos termos da LGPD (Lei 13.709/2018). Contato: `<e-mail de contato>`.
+O Wondher Pulse é feito pela **Wondher Digital LTDA**, que é a controladora dos dados tratados na nuvem da equipe, nos termos da LGPD (Lei 13.709/2018). Contato: `brianmendes@wondher.io`.
 
 ## O que fica só no seu computador
 
