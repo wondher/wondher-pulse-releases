@@ -1,6 +1,6 @@
 # Wondher Pulse — instaladores
 
-O Wondher Pulse é um app desktop da Wondher Digital para capturar demandas, cronometrar sessões de trabalho e acompanhar a própria carga, com Copilot (traga a sua chave), tarefas do Bitrix24 e equipe. Tudo fica no seu computador; só o que a equipe precisa ver vai para a nuvem (veja a [política de privacidade](PRIVACY.md)).
+O Wondher Pulse é um app desktop da Wondher Digital para capturar demandas, cronometrar sessões de trabalho e acompanhar a própria carga, com Copilot (traga a sua chave) e tarefas do Bitrix24. Tudo fica no seu computador (veja a [política de privacidade](PRIVACY.md)).
 
 Este repositório guarda **só os instaladores e as atualizações**. O código é privado.
 
@@ -44,7 +44,7 @@ O Wayland não deixa um app registrar atalhos globais. Crie o atalho pelo sistem
 /caminho/para/o-arquivo.AppImage --capture
 ```
 
-Com o Pulse aberto, o atalho abre a captura flutuante. Numa sessão X11, o atalho do próprio Pulse (Ctrl+Shift+Space) funciona direto.
+Com o Pulse aberto, o atalho abre a captura flutuante. Do mesmo jeito, `--copilot` abre o Pulse com o Copilot. Numa sessão X11, os atalhos do próprio Pulse (Ctrl+Shift+Space e Ctrl+Shift+J) funcionam direto.
 
 ## Atualizações
 
@@ -60,4 +60,4 @@ O banco, as configurações e o diagnóstico (`pulse.log`) ficam no seu computad
 | Windows | `%LOCALAPPDATA%\Wondher Pulse` |
 | Linux | `~/.local/share/Wondher Pulse` |
 
-Chaves e senhas (IA, webhook do Bitrix24, sessão da equipe) ficam no cofre do sistema: Keychain, Credential Manager ou Secret Service. Elas nunca vão para o banco nem para o log.
+Chaves e senhas (IA e webhook do Bitrix24) ficam no cofre do sistema: Keychain, Credential Manager ou Secret Service. Elas nunca vão para o banco nem para o log.
