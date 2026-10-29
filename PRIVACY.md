@@ -1,14 +1,14 @@
 # Política de privacidade do Wondher Pulse
 
-*Versão 0.2.5 · 29 de outubro de 2026*
+*Versão 0.2.6 · 29 de outubro de 2026*
 
 O Wondher Pulse é feito pela **Wondher Digital LTDA**. Contato: `brianmendes@wondher.io`.
 
 ## Tudo fica no seu computador
 
 O Pulse não tem servidor nem conta. O que você registra fica só no banco local do Pulse, no seu computador:
-- as demandas e as sessões de tempo;
-- as notas e os textos de checklist;
+- as demandas, com descrição, e as sessões de tempo;
+- as quick notes e os textos de checklist;
 - o histórico, o registro de remoções e as configurações.
 
 Desde a versão 0.2.4, o Pulse guarda também uma cópia do banco por dia, dos últimos 7 dias, na pasta "Wondher Pulse Backups", ao lado da pasta de dados. Essas cópias também ficam só no seu computador.
@@ -21,8 +21,11 @@ Até a versão 0.1.x havia uma função de equipe que enviava alguns campos para
 
 ## O que sai do computador, e só se você ligar
 
-- **Bitrix24:** o Pulse fala direto com o portal Bitrix24 da sua empresa, com o webhook que você mesmo cria. Lê as tarefas do filtro que você escolher e registra nelas o tempo e o status.
-- **Copilot:** usa o provedor de IA que você escolher (Anthropic, OpenAI, Google, Ollama ou outro compatível), com a sua própria chave. O Pulse envia a esse provedor títulos, status, prazos e tempo das suas demandas. Nunca envia notas. O tratamento desses dados segue os termos do provedor que você escolheu.
+- **Bitrix24:** o Pulse fala direto com o portal Bitrix24 da sua empresa, com o webhook que você mesmo cria. Lê as tarefas do filtro que você escolher, com a descrição delas, e registra nelas o tempo e o status. Ao criar uma tarefa a partir de uma demanda local, envia o título, o prazo, a prioridade e a descrição. Quick notes e checklists nunca vão para o Bitrix24.
+- **Copilot:** usa o provedor de IA que você escolher, com a sua própria chave. Desde a versão 0.2.6, o Copilot lê tudo o que importa sobre as suas demandas, para julgar melhor o que priorizar: títulos, status, prazos, tempo, tipo, origem, descrições, checklists e as quick notes mais recentes. Para onde isso vai depende do provedor, e Settings › Copilot mostra isso para o que estiver escolhido:
+  - **Local** (Ollama, ou um endpoint neste computador): nada sai do seu computador.
+  - **Nuvem** (Anthropic, OpenAI, Google, ou um endpoint em outra máquina): cada pergunta e cada sugestão de passos envia esses dados ao provedor. A captura envia só a linha que você digita. Quanto tempo o provedor guarda e como usa os dados segue os termos dele: Anthropic (https://www.anthropic.com/legal/privacy), OpenAI (https://openai.com/policies/privacy-policy/) e Google (https://ai.google.dev/gemini-api/terms).
+  - **Desligado**, ou sem chave (as respostas vêm das regras do próprio Pulse): nada vai para uma IA.
 - **Atualizações:** o Pulse instalado consulta o repositório público de versões do Pulse no GitHub (`wondher/wondher-pulse-releases`) para saber se há uma versão nova. A consulta não envia dado seu além do que qualquer download envia, como o endereço IP.
 
 ## Seus dados são seus
